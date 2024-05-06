@@ -1,0 +1,16 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Controle da câmera</mat-card-title>
+  </mat-card-header>
+  <mat-card-actions>
+    <button mat-button color="accent"  (click)="toggleTorch()">FLASH</button>
+    <button mat-button color="accent" >SHARE</button>
+  </mat-card-actions>
+  <mat-card-content>
+    <div>
+      <zxing-scanner [torch]="torchEnabled"  [device]="deviceCurrent" (camerasFound)="onCamerasFound($event)"
+        [formats]="allowedFormats" class="zxing-scanner" (scanSuccess)="scanSuccess($event)"></zxing-scanner>
+    </div>
+  </mat-card-content>
+
+</mat-card>
