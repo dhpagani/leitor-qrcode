@@ -1,0 +1,5 @@
+{
+  "files.autoSave": "off",
+  "standard.autoFixOnSave": true,
+  "editor.formatOnSave": true,
+}

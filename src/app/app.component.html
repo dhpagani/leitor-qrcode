@@ -13,7 +13,14 @@
         Esse "aplicativo" é para auxilir na contagem de ingressos da Festa da Paróquia Santo Antônio.
       </p>
     </mat-card-content>
+    <mat-card-content>
+      <app-summary></app-summary>
+    </mat-card-content>
   </mat-card>
-  <app-list-qrcodes></app-list-qrcodes>
-  <app-read-qrcodes></app-read-qrcodes>
+  <mat-card>
+    <mat-card-content><app-read-qrcodes></app-read-qrcodes></mat-card-content>
+  </mat-card>
+  <mat-card>
+    <mat-card-content><app-list-qrcodes></app-list-qrcodes></mat-card-content>
+  </mat-card>
 </mat-sidenav-container>
