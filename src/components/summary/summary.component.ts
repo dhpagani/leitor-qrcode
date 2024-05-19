@@ -44,6 +44,6 @@ export class SummaryComponent {
   }
 
   deleteAll() {
-
+    console.log('deleteAll');
   }
 }

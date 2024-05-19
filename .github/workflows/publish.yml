@@ -1,0 +1,23 @@
+name: publish
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build and publish
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/leitor-qrcode/browser
