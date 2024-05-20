@@ -2,17 +2,16 @@
 
   <mat-form-field class="size">
     <mat-label>Fichas lidas</mat-label>
-    <input matInput placeholder="Fichas lidas" value="0" disabled>
+    <input matInput placeholder="Fichas lidas" value="{{totalFichas}}" disabled>
   </mat-form-field>
   <mat-form-field class="size">
     <mat-label>Dinheiro total</mat-label>
-    <input matInput placeholder="Soma do dinheiro lido" value="R$ 0" disabled>
+    <input matInput placeholder="Soma do dinheiro lido" value="R$ {{totalDinheiro}}" disabled>
   </mat-form-field>
 </div>
 
 <button mat-flat-button style="float: right;" (click)="deleteAll()">
   <mat-icon aria-hidden="false" aria-label="Flash" fontIcon="delete_forever"></mat-icon>Limpar tudo</button>
-
 
 <button mat-flat-button style="float: right;" (click)="gerarCsv()">
   <mat-icon aria-hidden="false" aria-label="Flash" fontIcon="download"></mat-icon>Download CSV</button>
